@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;   
+}
+
+ul{
+    list-style: none;
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url("../fonts/raleway.ttf");
+}
+
+@font-face {
+    font-family: "roboto-light";
+    src: url("../fonts/roboto-light.ttf");
+}
+
+@font-face {
+    font-family:"dancing-script" ;
+    src: url("../fonts/dancingscript.ttf");
+}
+
+body{
+    font-family: "raleway";
+}
+
+/* == Header == */
+.header{
+    background-color: #FFFDEF;
+}
