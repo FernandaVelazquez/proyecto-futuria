@@ -11,7 +11,7 @@ a {
     color: black;
 }
 
-a:hover{
+a:hover {
     color: #30a958;
 }
 
@@ -40,7 +40,7 @@ body {
 
 /* == Header == */
 .navbar {
-    background-color: wheat
+    background-color: #FDEFD6
 }
 
 .nav-item {
@@ -71,7 +71,24 @@ h4 {
 }
 
 main {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    h4 {
+        font-size: 1rem;
+        font-weight: 5 00;
+    }
 }
 
 
@@ -93,78 +110,150 @@ main {
 .imagen1 {
     width: 100%;
 }
+
 .imagen {
     width: 90%;
+}
+
+@media (min-width: 1200px) {
+    .portada {
+        background-image: url(../images/image-1.png);
+        background-size: cover;
+        height: 600px;
+        padding: 0px 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 40vw);
+        justify-items: flex-end;
+    }
+
+    .imagen1 {
+        display: none;
+    }
 }
 
 /* -- Cualidades -- */
 
 .section-cualidades {
     padding: 20px 10px;
-    background-color: #f5deb3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.futuria{
-    font-weight: 800;
-    font-size: 1.2rem;
-  }
-
-.section-cualidad {
+    background-color: #FDEFD6;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.futuria {
+    font-weight: 800;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
 .section-cualidad-text {
     width: 80%;
     text-align: center;
-    margin-top: 2rem;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+@media (min-width: 1200px) {
+    .section-cualidades {
+        display: grid;
+        grid-template-rows: auto repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 0px;
+        justify-items: center;
+    }
+
+    .section-cualidades h2 {
+        font-size: 1.8rem;
+    }
+
+    .futuria {
+        font-size: 1.8rem;
+    }
+
+    .imagen {
+        width: 100%;
+    }
+
+    .image-reverse1 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .image-reverse2 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
 }
 
 /* -- Banner -- */
-.banner-info{
+.banner-info {
     background-color: #85D09E;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-   text-align: center;
-   padding-bottom: 0.5em;
-   padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding-bottom: 0.5em;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
 
 }
 
-.banner-numeros{
+.banner-numeros {
     font-family: roboto-light;
     font-size: 2rem;
     display: block;
 }
 
+@media (min-width: 1200px) {
+
+    .banner-info {
+        font-size: 1rem;
+        padding: 0px 50px;
+    }
+
+    .banner-numeros {
+        font-size: 3rem;
+    }
+}
+
 /* -- Recomendaciones -- */
 
-.recomendacion{
+.recomendacion {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px 10px;
 }
 
-.recomendacion h2{
+.recomendacion h2 {
     width: 70%;
     text-align: center;
 }
 
-.recomendacion-marcas{
-display: grid;
-grid-template-columns: repeat(2,1fr);
+.recomendacion-marcas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .recomendacion-marcas img {
     width: 10em;
-
     justify-items: center;
+}
+
+@media (min-width: 1200px) {
+    .recomendacion-marcas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 6rem;
+        row-gap: 4rem;
+        margin: 2rem;
+    }
+
 }
 
 /* -- Trabajemos juntos -- */
@@ -178,10 +267,12 @@ grid-template-columns: repeat(2,1fr);
     justify-content: space-evenly;
     padding: 30px 40px;
 }
-.section-trabajemos-juntos p{
-    font-weight: 500;
+
+.section-trabajemos-juntos p {
+    font-weight: 600;
 }
-.button{
+
+.button {
     background-color: #85D09E;
     border: none;
     color: black;
@@ -190,63 +281,113 @@ grid-template-columns: repeat(2,1fr);
     border-radius: 5px;
     padding: 1em 3em;
 }
-.button:hover{
+
+.button:hover {
     background-color: #30a958;
     color: white;
 }
 
+@media (min-width: 1200px) {
+    .section-trabajemos-juntos {
+        height: 600px;
+        display: grid;
+        grid-template-columns: 50vw 40vw 10vw;
+    }
+
+    .section-trabajemos-juntos-text {
+        grid-column-start: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+
+}
+
 /* -- Instagram -- */
 
-.seguinos-instagram{
-    background-color: wheat;
+.seguinos-instagram {
+    background-color: #FDEFD6;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 10px;
+    padding: 30px 30px;
     text-align: center;
 }
 
-.seguinos-instagram h3{
+.seguinos-instagram h3 {
     font-family: dancing-script;
     font-size: 2.5em;
 }
 
-.seguinos-instagram a{
+.seguinos-instagram a {
     font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 1em;
 }
 
-
 /* == Footer == */
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 2.5em;
-    gap: 1.5em;
+    margin: 2em;
+    gap: 1em;
 }
 
-.footer span{
+.footer span {
     display: block;
     font-size: 0.9em;
     margin: 0.5em;
 }
 
-.footer h4{
+.footer h4 {
     font-weight: 500;
 }
 
-.copyright {
-    font-size: 0.7rem;
+.footer-copyright {
+    font-size: 0.75rem;
 }
 
-.button-up{
+.button-up {
     color: #85D09E;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     position: fixed;
     bottom: 20px;
     right: 20px;
+}
+
+@media (min-width: 1200px) {
+    footer{
+        padding: 0rem 5rem;
+    }
+    .footer {
+        display: grid;
+        grid-template-areas:
+            "explorar ubicacion copyright logo"
+            "explorar ubicacion privacy logo";
+        grid-template-columns: repeat(3, 20vw) auto;
+        text-align: left;
+       
+    }
+
+    .footer-explorar {
+        grid-area: explorar;
+    }
+
+    .footer-ubicacion {
+        grid-area: ubicacion;
+    }
+
+    .footer-privacy {
+        grid-area: privacy;
+    }
+
+    .footer-logo-futuria {
+        grid-area: logo;
+    }
 }
