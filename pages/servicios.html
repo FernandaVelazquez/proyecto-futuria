@@ -5,154 +5,192 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>FUTURIA Studio - Servicios</title>
 </head>
 
 <body>
-
-    <header id="header-index" class="header">
-        <h1><a href="../index.html">FUTURIA</a></h1>
-        <nav class="nav">
-            <ul>
-                <li><a href="../pages/quienes-somos.html">QUIENES SOMOS</a></li>
-                <li><a href="../pages/servicios.html">SERVICIOS</a></li>
-                <li><a href="../pages/portfolio.html">PORTFOLIO</a></li>
-                <li><a href="../pages/contactanos.html">CONTACTANOS</a></li>
-                <li><a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a></li>
-            </ul>
-        </nav>
+    <header id=header class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img class=w-75 src="../images/logo-futuria.png"
+                    alt="logo-futuria"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/quienes-somos.html">QUIENES SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contactanos.html">CONTACTANOS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-
-            <h2>Servicios pensados y diseñados con visión comercial. Para que vendas más y mejor.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
-                aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p>
+        <section class="servicios-intro">
+            <div class="servicios-intro-text">
+                <h2> Servicios pensados y diseñados con visión comercial. <span>Para que vendas más y mejor.</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                    aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos
+                    himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p>
+            </div>
             <figure>
-                <img src="../images/imagen1.jpg" alt="imagen-ejemplo">
+                <img class="imagen1" src="../images/imagen-1servicios.jpg" alt="imagen-1servicios">
 
             </figure>
-            <hr>
+        </section>
+        <section class="servicios">
 
             <h2>Te brindamos un conjunto de prestaciones que, sin dudas, elevarán tu negocio a un nuevo nivel de
                 expansión.
             </h2>
             <p>Su característica principal es que tienen un alto nivel de personalización, ya que estaremos trabajando
                 en equipo de manera directa para tu negocio.</p>
-            <div>
-                <h3>BRANDING & CREACIÓN DE MARCA</h3>
-                <p> Nuestro servicio estrella. Tenemos 4 planes exclusivos y diseñados para distintas etapas de tu
-                    negocio, pero todos incluyen Estrategia comercial, Diseño de Logotipos, Manual de marca y mucho más.
-                </p>
-            </div>
-            <div>
-                <h3>WEB DESIGN / E-COMMERCE</h3>
-                <p> Creamos tu hogar online: podemos realizar landings, sitios institucionales, tiendas online o
-                    plataformas de cursos. Hoy en día contar con tu propio espacio virtual es fundamental para
-                    expandirte.</p>
-            </div>
 
-            <div>
-                <h3>MANTENIMIENTO WEB</h3>
-                <p> Nos encargamos de mantener tu sitio 100% actualizado. Tus ojos en tu negocio, los nuestros en tu
-                    web.</p>
-            </div>
-            <div>
-                <h3> FOTOGRAFÍA & VIDEO</h3>
 
-                <p> Campañas en interiores o exteriores, creación de contenido audiovisual, videos en formato reels,
-                    fotografía institucional o para marca personal, etc.</p>
-            </div>
-            <div>
-                <h3>SOCIAL MEDIA SERVICES</h3>
+            <div class="detalle-servicios">
+                <span>01</span>
+                <div>
+                    <h4>BRANDING & CREACIÓN DE MARCA</h4>
+                    <p> Nuestro servicio estrella. Tenemos 4 planes exclusivos y diseñados para distintas etapas
+                        de tu negocio, pero todos incluyen Estrategia comercial, Diseño de Logotipos, Manual de
+                        marca y mucho más. </p>
+                </div>
+                <span>02</span>
+                <div>
+                    <h4>WEB DESIGN / E-COMMERCE</h4>
+                    <p> Creamos tu hogar online: podemos realizar landings, sitios institucionales, tiendas
+                        online o
+                        plataformas de cursos. Hoy en día contar con tu propio espacio virtual es fundamental
+                        para
+                        expandirte.</p>
+                </div>
 
-                <p> Dentro del amplio mundo de las redes sociales, diseñamos servicios que podrás contratar por única
-                    vez (Creación de Contenido o Estrategia para redes) ó de manera mensual (Social Media Management con
-                    o sin publicidad en Facebook Ads).</p>
-            </div>
+                <span>03</span>
+                <div>
+                    <h4>MANTENIMIENTO WEB</h4>
+                    <p> Nos encargamos de mantener tu sitio 100% actualizado. Tus ojos en tu negocio, los
+                        nuestros
+                        en tu
+                        web.</p>
+                </div>
 
+                <span>04</span>
+                <div>
+                    <h4> FOTOGRAFÍA & VIDEO</h4>
+                    <p> Campañas en interiores o exteriores, creación de contenido audiovisual, videos en
+                        formato
+                        reels,
+                        fotografía institucional o para marca personal, etc.</p>
+                </div>
+
+                <span>05</span>
+                <div>
+                    <h4>SOCIAL MEDIA SERVICES</h4>
+                    <p> Dentro del amplio mundo de las redes sociales, diseñamos servicios que podrás contratar
+                        por
+                        única
+                        vez (Creación de Contenido o Estrategia para redes) ó de manera mensual (Social Media
+                        Management
+                        con
+                        o sin publicidad en Facebook Ads).</p>
+                </div>
+            </div>
         </section>
-        <hr>
+
         <section class="logros">
             <h2>Los logros de quienes ya nos eligieron:</h2>
             <p>Los objetivos y metas que cumplen nuestros clientas son también logros nuestros. Estos son algunos de los
                 que han logrado conseguir a lo largo de nuestro tiempo de trabajo juntos</p>
-            <ul>
-                <li>Lanzamientos de nuevas marcas al mercado</li>
-                <li>Lanzamientos de nuevas líneas de productos</li>
-                <li>Incremento de revenue</li>
-                <li>Atracción de clientes indicados</li>
-                <li>Adopción de perspectiva comercial y mayor conocimiento de su negocio</li>
-                <li>Alcance de objetivos trimestrales o semestrales</li>
-                <li>Aumento de engagement en redes sociales</li>
-                <li>Obtener una marca única y distinguible de la competencia</li>
-                <li>Mayor presencia en el mercado</li>
-            </ul>
+            <div class="logros-list">
+                <p><i class="bi bi-diamond-fill"></i> Lanzamientos de nuevas marcas al mercado</p>
+                <p><i class="bi bi-diamond-fill"></i> Lanzamientos de nuevas líneas de productos</p>
+                <p><i class="bi bi-diamond-fill"></i> Incremento de revenue</p>
+                <p><i class="bi bi-diamond-fill"></i> Atracción de clientes indicados</p>
+                <p><i class="bi bi-diamond-fill"></i> Adopción de perspectiva comercial y mayor conocimiento de su negocio</p>
+                <p><i class="bi bi-diamond-fill"></i> Alcance de objetivos trimestrales o semestrales</p>
+                <p><i class="bi bi-diamond-fill"></i> Aumento de engagement en redes sociales</p>
+                <p><i class="bi bi-diamond-fill"></i> Obtener una marca única y distinguible de la competencia</p>
+                <p><i class="bi bi-diamond-fill"></i> Mayor presencia en el mercado</p>
+            </div>
         </section>
-        <section>
-
-            <h3>"Estamos encantados con el resultado final que logramos para nuestro negocio. Teniamos unas expectativas
-                que fueron abismalmente superadas, y desde el primer momento tuvimos una atención de lujo. MARCA nos
-                brindó no solo un gran servicio sino también un gran acompañamiento.”</h3>
-            <span>Julieta, CEO NEGOX</span>
-            <figure>
-                <img src="../images/imagen1.jpg" alt="imagen-ejemplo">
+        <section class="recomendacion-usuario">
+            <h4>"Estamos encantados con el resultado final que logramos para nuestro negocio. Teniamos unas expectativas
+                que fueron abismalmente superadas, y desde el primer momento tuvimos una atención de lujo. FUTURIA nos
+                brindó no solo un gran servicio sino también un gran acompañamiento.”</h4>
+            <span>Julieta Perez, CEO de NEGOXIO</span>
+            <figure class="imagen2">
+                <img src="../images/imagen-2servicios.png" alt="imagen-2servicios">
 
             </figure>
         </section>
-        <hr>
-        <section>
+       
+        <section class="solicitar-entrevista">
             <h2>Transforma tu negocio hoy mismo.</h2>
             <p>Si bien trabajamos con muchas marcas a lo largo del planeta, nos basamos en ciertos puntos para saber si
-                realmente podemos ayudarte.
-                Es por eso que tenemos una entrevista previa a modo de diagnóstico, para conocernos y evaluar si somos
-                un buen match para tus necesidades y expectativas!</p>
-            <span class="boton">SOLICITA TU ENTREVISTA →</span>
-            <figure>
-                <img src="../images/imagen1.jpg" alt="imagen-ejemplo">
+                realmente podemos ayudarte. 
+               <span> Es por eso que tenemos una entrevista previa a modo de diagnóstico, para conocernos y evaluar si somos
+                un buen match para tus necesidades y expectativas!</span></p>
+                <div><a href="./pages/contactanos.html" class="button">SOLICITA TU ENTREVISTA</a></div>
+            <figure class="imagen3">
+                <img src="../images/imagen-3servicios.jpg" alt="imagen-3servicios">
 
             </figure>
         </section>
+        <footer>
+            <div class="footer">
+                <div class="footer-logo-futuria">
+                    <figure>
+                        <img src="../images/logo-futuria.png" alt="logo-futuria">
+                    </figure>
+                </div>
+                <div class="footer-explorar">
+                    <h4>Explorar</h4>
+                    <span><a href="../index.html">Home</a></span>
+                    <span><a href="../pages/quienes-somos.html">Quienes somos</a></span>
+                    <span><a href="../pages/servicios.html">Servicios</a></span>
+                    <span><a href="../pages/portfolio.html">Portfolio</a></span>
+                    <span><a href="../pages/contactanos.html">Contactanos</a></span>
+                </div>
 
+                <div class="footer-ubicacion">
+                    <h4>Donde encontrarnos</h4>
+                    <span>Buenos Aires, Argentina</span>
+                    <span>Lun a Vie 9:00 a 17:00</span>
+                    <span>+54 911 6736 4707</span>
+                    <span><a href="https://mail.google.com/" target="_blank">info@futuriastudio.com</a></span>
+                    <span><a href="https://www.instagram.com/" target="_blank"><i
+                                class="bi bi-instagram"></i></a></span>
+                </div>
+                <div class="footer-privacy">
+                    <span>Privacy policy</span>
+                    <span>Cookies</span>
+                    <span>Legal terms</span>
+                </div>
+                <div class="footer-copyright">
+                    <span> Copyright © 2023 FUTURIA Studio. </span><span> Todos los derechos reservados</span>
+                </div>
+                <a class="button-up" href="#header"><i class="bi bi-arrow-up-circle-fill"></i></a>
+        </footer>
     </main>
-    <hr>
-    <footer>
-        <h4>Explorar</h4>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/quienes-somos.html">Quienes somos</a></li>
-            <li><a href="../pages/servicios.html">Servicios</a></li>
-            <li><a href="../pages/portfolio.html">Portfolio</a></li>
-            <li><a href="../pages/contactanos.html">Contactanos</a></li>
-        </ul>
-        <h4>Donde encontrarnos</h4>
-        <ul>
-            <li>Buenos Aires, Argentina</li>
-            <li>Lun a Vie 9:00 a 17:00</li>
-            <li>+54 911 6736 4707</li>
-            <li><a href="https://mail.google.com/" target="_blank">info@futuriastudio.com</a>
-            </li>
-
-        </ul>
-
-        <h4>Copyright © 2023 FUTURIA Studio. Todos los derechos reservados</h4>
-        <ul>
-            <li>Privacy policy</li>
-            <li>Cookies</li>
-            <li>Legal terms</li>
-        </ul>
-        <figure>
-            <img src="../images/logo2.png" alt="logofuturia">
-        </figure>
-        <ul>
-            <li><a href="#header-index">Ir arriba</a></li>
-        </ul>
-
-
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

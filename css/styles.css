@@ -19,6 +19,21 @@ ul {
     list-style: none;
 }
 
+.button {
+    background-color: #85D09E;
+    border: none;
+    color: black;
+    font-size: 0.85em;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 1em 3em;
+}
+
+.button:hover {
+    background-color: #30a958;
+    color: white;
+}
+
 @font-face {
     font-family: "raleway";
     src: url("../fonts/raleway.ttf");
@@ -38,7 +53,7 @@ body {
     font-family: "raleway";
 }
 
-/* == Header == */
+/* ============= Header ============= */
 .navbar {
     background-color: #FDEFD6
 }
@@ -67,7 +82,7 @@ h3 {
 
 h4 {
     font-size: 0.9rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 main {
@@ -91,7 +106,72 @@ main {
     }
 }
 
+/* ============= Footer ============= */
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2em;
+    gap: 1em;
+}
+
+.footer span {
+    display: block;
+    font-size: 0.9em;
+    margin: 0.5em;
+}
+
+.footer h4 {
+    font-weight: 500;
+}
+
+.footer-copyright {
+    font-size: 0.75rem;
+}
+
+.button-up {
+    color: #85D09E;
+    font-size: 2.5rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+@media (min-width: 1200px) {
+    footer {
+        padding: 0rem 5rem;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-areas:
+            "explorar ubicacion copyright logo"
+            "explorar ubicacion privacy logo";
+        grid-template-columns: repeat(3, 20vw) auto;
+        text-align: left;
+    }
+
+    .footer-explorar {
+        grid-area: explorar;
+    }
+
+    .footer-ubicacion {
+        grid-area: ubicacion;
+    }
+
+    .footer-privacy {
+        grid-area: privacy;
+    }
+
+    .footer-logo-futuria {
+        grid-area: logo;
+    }
+}
+
+
+/* ============= INDEX/HOME ============= */
 /* -- Portada -- */
 
 .portada {
@@ -103,7 +183,7 @@ main {
 
 
 .portada-texto {
-    width: 80%;
+    width: 80vw;
     text-align: center;
 }
 
@@ -213,7 +293,7 @@ main {
 
     .banner-info {
         font-size: 1rem;
-        padding: 0px 50px;
+        padding: 10px 50px;
     }
 
     .banner-numeros {
@@ -272,20 +352,7 @@ main {
     font-weight: 600;
 }
 
-.button {
-    background-color: #85D09E;
-    border: none;
-    color: black;
-    font-size: 0.85em;
-    font-weight: 500;
-    border-radius: 5px;
-    padding: 1em 3em;
-}
 
-.button:hover {
-    background-color: #30a958;
-    color: white;
-}
 
 @media (min-width: 1200px) {
     .section-trabajemos-juntos {
@@ -328,66 +395,109 @@ main {
     margin-bottom: 1em;
 }
 
-/* == Footer == */
+/* ============= SERVICIOS ============= */
+/* -- Servicios-intro -- */
 
-.footer {
+.servicios-intro {
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.servicios-intro-text {
+    width: 80vw;
     text-align: center;
-    margin: 2em;
-    gap: 1em;
 }
 
-.footer span {
-    display: block;
-    font-size: 0.9em;
-    margin: 0.5em;
+.servicios-intro-text span {
+    display: inline-block;
 }
 
-.footer h4 {
+.imagen1 {
+    width: 100%;
+}
+
+/* -- Servicios -- */
+.servicios {
+    background-color: #FDEFD6;
+    padding: 40px 10px;
+    text-align: center;
+
+
+}
+
+.detalle-servicios {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+    padding: 0rem 2rem;
+    text-align: left;
+}
+
+.detalle-servicios span {
+    font-family: "roboto-light";
+    font-size: 2rem;
+    text-align: right;
+}
+
+
+/* -- Logros -- */
+.logros {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.logros-list {
     font-weight: 500;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-left: 1em;
 }
 
-.footer-copyright {
-    font-size: 0.75rem;
-}
-
-.button-up {
+.bi-diamond-fill {
+    font-size: 0.6rem;
     color: #85D09E;
-    font-size: 2.5rem;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
 }
 
-@media (min-width: 1200px) {
-    footer{
-        padding: 0rem 5rem;
-    }
-    .footer {
-        display: grid;
-        grid-template-areas:
-            "explorar ubicacion copyright logo"
-            "explorar ubicacion privacy logo";
-        grid-template-columns: repeat(3, 20vw) auto;
-        text-align: left;
-       
-    }
+/* -- Recomendación usuarios -- */
 
-    .footer-explorar {
-        grid-area: explorar;
-    }
+.recomendacion-usuario {
+    background-image: url("../images/imagen-2servicios.png");
+    background-size: cover;
+    height: 450px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px 60px 30px 30px;
+}
+.recomendacion-usuario h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-style: oblique;
 
-    .footer-ubicacion {
-        grid-area: ubicacion;
-    }
+}
+.imagen2 {
+    display: none;
+}
 
-    .footer-privacy {
-        grid-area: privacy;
-    }
+/* -- Solicitar-entrevista -- */
 
-    .footer-logo-futuria {
-        grid-area: logo;
-    }
+.solicitar-entrevista{
+    background-color: #FDEFD6;
+    height: 400px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.solicitar-entrevista span{
+    display: inline-block;
+}
+.imagen3{
+    display: none;
 }
