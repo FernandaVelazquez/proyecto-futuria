@@ -113,7 +113,7 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 2em;
+    padding: 3em;
     gap: 1em;
 }
 
@@ -183,7 +183,7 @@ main {
 
 
 .portada-texto {
-    width: 80vw;
+    width: 80%;
     text-align: center;
 }
 
@@ -407,6 +407,7 @@ main {
 
 .servicios-intro-text {
     width: 80vw;
+    max-width: 600px;
     text-align: center;
 }
 
@@ -414,32 +415,74 @@ main {
     display: inline-block;
 }
 
-.imagen1 {
+.imagen-1servicios {
     width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .servicios-intro {
+        display: grid;
+        grid-template-columns: 40vw 60vw;
+    }
+
+    .servicios-intro-text {
+        width: 80%;
+        max-width: 500px;
+        justify-self: flex-end;
+    }
+
+    .imagen-1servicios {
+        width: 80%;
+        max-width: 600px;
+        justify-self: center;
+    }
 }
 
 /* -- Servicios -- */
 .servicios {
     background-color: #FDEFD6;
-    padding: 40px 10px;
+    padding: 40px 30px;
     text-align: center;
+}
 
-
+.servicios-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .detalle-servicios {
     display: grid;
     grid-template-columns: 15% 85%;
     row-gap: 1rem;
-    column-gap: 0.5rem;
-    padding: 0rem 2rem;
+    column-gap: 1rem;
+    padding: 1rem 2rem;
     text-align: left;
 }
 
 .detalle-servicios span {
     font-family: "roboto-light";
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: right;
+}
+
+@media (min-width: 1200px) {
+    .servicios-text {
+        padding: 0rem 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .detalle-servicios {
+        grid-template-columns: 10% 35% 10% 35%;
+        row-gap: 2rem;
+        padding: 1rem 4rem;
+    }
+
+    .detalle-servicios span {
+        font-family: "roboto-light";
+        font-size: 3rem;
+        text-align: right;
+    }
 }
 
 
@@ -461,43 +504,103 @@ main {
     color: #85D09E;
 }
 
+@media (min-width: 1200px) {
+    .logros {
+        padding: 40px 120px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .logros-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1rem;
+        text-align: center;
+    }
+}
+
 /* -- Recomendación usuarios -- */
 
 .recomendacion-usuario {
-    background-image: url("../images/imagen-2servicios.png");
+    background-image: url("../images/imagen-2bservicios.png");
     background-size: cover;
     height: 450px;
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 30px 60px 30px 30px;
+    padding: 30px;
 }
-.recomendacion-usuario h4{
-    font-size: 1.1rem;
+
+.recomendacion-usuario h4 {
+    font-size: 1rem;
     font-weight: 600;
     font-style: oblique;
-
+    line-height: 1.6;
+    width: 60vw;
 }
-.imagen2 {
-    display: none;
+
+
+@media (min-width: 1200px) {
+    .recomendacion-usuario {
+        background-image: url("../images/imagen-2servicios.jpg");
+        padding: 30px 120px
+    }
+
+    .recomendacion-usuario h4 {
+        font-size: 1.2rem;
+        width: 50vw;
+    }
 }
 
 /* -- Solicitar-entrevista -- */
 
-.solicitar-entrevista{
+.solicitar-entrevista {
     background-color: #FDEFD6;
     height: 400px;
     padding: 40px 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     gap: 1rem;
 }
 
-.solicitar-entrevista span{
+.solicitar-entrevista-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-self: center; 
+}
+.solicitar-entrevista span {
     display: inline-block;
 }
-.imagen3{
+
+.imagen-3servicios {
     display: none;
+}
+
+@media (min-width: 1200px) {
+    .solicitar-entrevista {
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-bottom: 2rem;
+    }
+
+    .solicitar-entrevista-text {
+        width: 80%;
+        max-width: 500px;
+       
+        margin-left: 3rem;
+    }
+
+    .imagen-3servicios {
+        display: block;
+        height: 100%;
+        max-height: 600px;
+        justify-self: center;
+    }
 }
