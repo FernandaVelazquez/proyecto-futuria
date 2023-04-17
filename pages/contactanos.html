@@ -5,41 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>FUTURIA Studio - Contactanos</title>
 </head>
 
 <body>
-    <header id="header-index" class="header">
-        <h1><a href="../index.html">FUTURIA</a></h1>
-        <nav class="nav">
-            <ul>
-                <li><a href="../pages/quienes-somos.html">QUIENES SOMOS</a></li>
-                <li><a href="../pages/servicios.html">SERVICIOS</a></li>
-                <li><a href="../pages/portfolio.html">PORTFOLIO</a></li>
-                <li><a href="../pages/contactanos.html">CONTACTANOS</a></li>
-                <li><a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a></li>
-            </ul>
-        </nav>
+    <header id=header class="navbar navbar-expand-xl">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img class=w-75 src="../images/logo-futuria.png"
+                    alt="logo-futuria"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/quienes-somos.html">QUIENES SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contactanos.html">CONTACTANOS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <h2>Transforma tu negocio hoy.
-            ¿Trabajamos juntos?</h2>
-        <p>Para poder trabajar juntos, es necesario que completes este formulario con suma consciencia y seriedad, ya
-            que se trata del primer contacto que tendremos con tu marca y así saber si podemos ayudarte.
-            Una vez completo el form, te aparecerá en pantalla un link para que puedas reservar tu Entrevista de
-            Diagnóstico, la cual consiste en un encuentro online de 30 minutos para conocernos y determinar si somos un
-            buen match para tu negocio.</p>
-        <span>No enviamos presupuestos sin antes haber tenido la entrevista.</span>
-        <figure>
-            <img src="../images/imagen1.jpg" alt="imagen-ejemplo">
+        <section class="trabajemos-juntos">
+            <h2>Transforma tu negocio hoy.
+                ¿Trabajamos juntos?</h2>
+            <p>Para poder trabajar juntos, es necesario que completes este formulario con suma consciencia y seriedad,
+                ya
+                que se trata del primer contacto que tendremos con tu marca y así saber si podemos ayudarte.
+                Una vez completo el form, te aparecerá en pantalla un link para que puedas reservar tu Entrevista de
+                Diagnóstico, la cual consiste en un encuentro online de 30 minutos para conocernos y determinar si somos
+                un
+                buen match para tu negocio.</p>
+            <span>No enviamos presupuestos sin antes haber tenido la entrevista.</span>
+            <img class="imagen-1servicios" src="../images/imagen1.jpg" alt="imagen-ejemplo">
 
-        </figure>
-        <hr>
-        <h3>Recuerda que es sumamente importante que reserves tu entrevista al completar el formulario. En caso de que
-            no te aparezca el link, contáctanos a info@futuriastudio.com</h3>
-        <hr>
-        <form action="">
+
+        </section>
+        <div class="nota-recuerda">
+            <h4>Recuerda que es sumamente importante que reserves tu entrevista al completar el formulario. En caso
+                de que
+                no te aparezca el link, contáctanos a info@futuriastudio.com</h4>
+        </div>
+
+        <form class="formulario-contacto" action="">
 
             <div><label for="nombre">Nombre y Apellido *</label></div>
             <div><input id="nombre" name="nombre" type="text">
@@ -69,7 +92,8 @@
                     <div></div><input id="referido" name="referido" type="text">
                     <span>Escribinos su nombre para que podamos agradecerle!</span>
                 </div>
-                <div> <label for="problematica">Contanos cual es la problemática que atraviesa tu negocio actualmente
+                <div> <label for="problematica">Contanos cual es la problemática que atraviesa tu negocio
+                        actualmente
                         *</label></div>
                 <div><textarea name="problematica" id="problematica" cols="30" rows="10"></textarea>
                 </div>
@@ -109,7 +133,6 @@
             <div><input name="servicio" id="no-lo-se" type="radio">
                 <label for="no-lo-se">No lo sé</label>
             </div>
-
             <div>
                 <span>¿Cuantó estas dispuesto a invertir? *</span>
             </div>
@@ -134,59 +157,56 @@
                     <option value="otro">Otro</option>
                 </select>
             </div>
-
             <div> <input name="terminos-condiciones" id="terminos-condiciones" type="checkbox">
                 <label for="terminos-condiciones">He leído y acepto la Política de Privacidad y el uso de mis
                     datos para
                     enviarme la información solicitada.</label>
             </div>
-
-            <div><input type="submit" value="ENVIAR APLICACIÓN"></div>
-
-
-
-
-
-
+            <div><input class="button" type="submit" value="ENVIAR APLICACIÓN"></div>
         </form>
 
+
     </main>
-    <hr>
     <footer>
-        <h4>Explorar</h4>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/quienes-somos.html">Quienes somos</a></li>
-            <li><a href="../pages/servicios.html">Servicios</a></li>
-            <li><a href="../pages/portfolio.html">Portfolio</a></li>
-            <li><a href="../pages/contactanos.html">Contactanos</a></li>
+        <div class="footer">
+            <div class="footer-logo-futuria">
+                <figure>
+                    <img src="../images/logo-futuria.png" alt="logo-futuria">
+                </figure>
+            </div>
+            <div class="footer-explorar">
+                <h4>Explorar</h4>
+                <span><a href="../index.html">Home</a></span>
 
-        </ul>
-        <h4>Donde encontrarnos</h4>
-        <ul>
-            <li>Buenos Aires, Argentina</li>
-            <li>Lun a Vie 9:00 a 17:00</li>
-            <li>+54 911 6736 4707</li>
-            <li><a href="https://mail.google.com/" target="_blank">info@futuriastudio.com</a>
-            </li>
+                <span><a href="../pages/quienes-somos.html">Quienes somos</a></span>
+                <span><a href="../pages/servicios.html">Servicios</a></span>
+                <span><a href="../pages/portfolio.html">Portfolio</a></span>
+                <span><a href="../pages/contactanos.html">Contactanos</a></span>
+            </div>
 
-        </ul>
-
-        <h4>Copyright © 2023 FUTURIA Studio. Todos los derechos reservados</h4>
-        <ul>
-            <li>Privacy policy</li>
-            <li>Cookies</li>
-            <li>Legal terms</li>
-        </ul>
-        <figure>
-            <img src="../images/logo2.png" alt="logofuturia">
-        </figure>
-        <ul>
-            <li><a href="#header-index">Ir arriba</a></li>
-        </ul>
-
-
+            <div class="footer-ubicacion">
+                <h4>Donde encontrarnos</h4>
+                <span>Buenos Aires, Argentina</span>
+                <span>Lun a Vie 9:00 a 17:00</span>
+                <span>+54 911 6736 4707</span>
+                <span><a href="https://mail.google.com/" target="_blank">info@futuriastudio.com</a></span>
+                <span><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></span>
+            </div>
+            <div class="footer-privacy">
+                <span>Privacy policy</span>
+                <span>Cookies</span>
+                <span>Legal terms</span>
+            </div>
+            <div class="footer-copyright">
+                <span> Copyright © 2023 FUTURIA Studio. </span><span> Todos los derechos reservados</span>
+            </div>
+            <a class="button-up" href="#header"><i class="bi bi-arrow-up-circle-fill"></i></a>
     </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
+
 
 </html>

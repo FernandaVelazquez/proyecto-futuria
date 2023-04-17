@@ -5,100 +5,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>FUTURIA Studio - Portfolio</title>
 </head>
 
 <body>
-    <header id="header-index" class="header">
-        <h1><a href="../index.html">FUTURIA</a></h1>
-        <nav class="nav">
-            <ul>
-                <li><a href="../pages/quienes-somos.html">QUIENES SOMOS</a></li>
-                <li><a href="../pages/servicios.html">SERVICIOS</a></li>
-                <li><a href="../pages/portfolio.html">PORTFOLIO</a></li>
-                <li><a href="../pages/contactanos.html">CONTACTANOS</a></li>
-                <li><a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a></li>
-            </ul>
-        </nav>
+    <header id=header class="navbar navbar-expand-xl">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img class=w-75 src="../images/logo-futuria.png"
+                    alt="logo-futuria"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/quienes-somos.html">QUIENES SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contactanos.html">CONTACTANOS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
+        <section class="portfolio">
             <h2>Tomate un momento para revisar nuestros trabajos realizados para quienes ya nos eligieron</h2>
-            <figure><img src="../images/imagen1.jpg" alt="imagen-ejemplo"></figure>
+            <img class="imagen-1servicios" src="../images/imagen1.jpg" alt="imagen-ejemplo">
         </section>
-        <hr>
+
         <section class="trabajos-portfolio">
-            <h3>TRABAJO 1</h3>
+            <h4>TRABAJO 1</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
                 aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
                 himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p>
-            <figure><img src="../images/imagen1.jpg" alt="imagen-ejemplo"></figure>
-            <h3>TRABAJO 2</h3>
+                <img class="imagen-1servicios" src="../images/imagen1.jpg" alt="imagen-ejemplo">
+            <h4>TRABAJO 2</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
                 aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
                 himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p>
-            <figure><img src="../images/imagen1.jpg" alt="imagen-ejemplo"></figure>
-            <h3>TRABAJO 3</h3>
+                <img class="imagen-1servicios" src="../images/imagen1.jpg" alt="imagen-ejemplo">
+            <h4>TRABAJO 3</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
                 aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
                 himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p>
-            <figure><img src="../images/imagen1.jpg" alt="imagen-ejemplo"></figure>
-            <h3>TRABAJO 4</h3>
+                <img class="imagen-1servicios" src="../images/imagen1.jpg" alt="imagen-ejemplo">
+            <h4>TRABAJO 4</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
                 aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
                 himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque.</p>
-            <figure><img src="../images/imagen1.jpg" alt="imagen-ejemplo"></figure>
+                <img class="imagen-1servicios" src="../images/imagen1.jpg" alt="imagen-ejemplo">
         </section>
 
 
-        <section class="seguinos-instagram-portfolio">
-            <h3>seguinos en instagram!</h3>
-            <h4><a href="https://www.instagram.com/" target="_blank">@futuriastudio</a></h4>
-            <p>Tenemos mucho contenido gratuito y disponible en nuestro canal principal de Instagram. ¡No te olvides de
-                regalarnos un follow por allí!
-            </p>
+        <section class="seguinos-instagram ig-portfolio">
+            <h3>seguinos en Instagram!</h3>
+            <a href="https://www.instagram.com/" target="_blank">@futuriastudio</a>
+            <p> Tenemos mucho contenido gratuito y tips disponibles en nuestra cuenta.</p>
+            <p> ¡No te olvides de regalarnos un follow por allí!</p>
+
         </section>
 
     </main>
 
-    <hr>
     <footer>
-        <h4>Explorar</h4>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/quienes-somos.html">Quienes somos</a></li>
-            <li><a href="../pages/servicios.html">Servicios</a></li>
-            <li><a href="../pages/portfolio.html">Portfolio</a></li>
-            <li><a href="../pages/contactanos.html">Contactanos</a></li>
+        <div class="footer">
+            <div class="footer-logo-futuria">
+                <figure>
+                    <img src="../images/logo-futuria.png" alt="logo-futuria">
+                </figure>
+            </div>
+            <div class="footer-explorar">
+                <h4>Explorar</h4>
+                <span><a href="../index.html">Home</a></span>
 
-        </ul>
-        <h4>Donde encontrarnos</h4>
-        <ul>
-            <li>Buenos Aires, Argentina</li>
-            <li>Lun a Vie 9:00 a 17:00</li>
-            <li>+54 911 6736 4707</li>
-            <li><a href="https://mail.google.com/" target="_blank">info@futuriastudio.com</a>
-            </li>
+                <span><a href="../pages/quienes-somos.html">Quienes somos</a></span>
+                <span><a href="../pages/servicios.html">Servicios</a></span>
+                <span><a href="../pages/portfolio.html">Portfolio</a></span>
+                <span><a href="../pages/contactanos.html">Contactanos</a></span>
+            </div>
 
-        </ul>
-
-        <h4>Copyright © 2023 FUTURIA Studio. Todos los derechos reservados</h4>
-        <ul>
-            <li>Privacy policy</li>
-            <li>Cookies</li>
-            <li>Legal terms</li>
-        </ul>
-        <figure>
-            <img src="../images/logo2.png" alt="logofuturia">
-        </figure>
-        <ul>
-            <li><a href="#header-index">Ir arriba</a></li>
-        </ul>
-
-
+            <div class="footer-ubicacion">
+                <h4>Donde encontrarnos</h4>
+                <span>Buenos Aires, Argentina</span>
+                <span>Lun a Vie 9:00 a 17:00</span>
+                <span>+54 911 6736 4707</span>
+                <span><a href="https://mail.google.com/" target="_blank">info@futuriastudio.com</a></span>
+                <span><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></span>
+            </div>
+            <div class="footer-privacy">
+                <span>Privacy policy</span>
+                <span>Cookies</span>
+                <span>Legal terms</span>
+            </div>
+            <div class="footer-copyright">
+                <span> Copyright © 2023 FUTURIA Studio. </span><span> Todos los derechos reservados</span>
+            </div>
+            <a class="button-up" href="#header"><i class="bi bi-arrow-up-circle-fill"></i></a>
     </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
