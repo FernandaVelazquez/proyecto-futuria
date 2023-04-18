@@ -559,11 +559,11 @@ main {
 
 .solicitar-entrevista {
     background-color: #FDEFD6;
-    padding: 20px 10px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 400px;
+    height: 450px;
 }
 
 .solicitar-entrevista-text {
@@ -577,31 +577,20 @@ main {
     display: inline-block;
 }
 
-.imagen-3servicios {
-    display: none;
-}
+
 
 @media (min-width: 1200px) {
-    .solicitar-entrevista {
-        background-color: transparent;
-        padding: 40px 120px;
-        display: grid;
-        grid-template-columns: 40vw 60vw;
-
-    }
 
     .solicitar-entrevista-text {
-        width: 80%;
-        max-width: 500px;
-        margin-left: 3rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 60%;
+        max-width: 800px;
+        align-items: center;
     }
 
-    .imagen-3servicios {
-        display: block;
-        width: 100%;
-        max-width: 400px;
-        justify-self: center;
-
+    .button-entrevista {
+        grid-column-start: 2;
     }
 }
 
