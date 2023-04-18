@@ -559,49 +559,38 @@ main {
 
 .solicitar-entrevista {
     background-color: #FDEFD6;
-    height: 400px;
-    padding: 40px 30px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    gap: 1rem;
+    height: 450px;
 }
 
-.solicitar-entrevista-text{
+.solicitar-entrevista-text {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    align-self: center; 
+    align-self: center;
 }
+
 .solicitar-entrevista span {
     display: inline-block;
 }
 
-.imagen-3servicios {
-    display: none;
-}
+
 
 @media (min-width: 1200px) {
-    .solicitar-entrevista {
-        background-color: transparent;
-        display: grid;
-        grid-template-columns: 40% 60%;
-        margin-bottom: 2rem;
-    }
 
     .solicitar-entrevista-text {
-        width: 80%;
-        max-width: 500px;
-       
-        margin-left: 3rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 60%;
+        max-width: 800px;
+        align-items: center;
     }
 
-    .imagen-3servicios {
-        display: block;
-        height: 100%;
-        max-height: 600px;
-        justify-self: center;
+    .button-entrevista {
+        grid-column-start: 2;
     }
 }
 
@@ -628,31 +617,31 @@ main {
 }
 
 /* -- Conocé al equipo -- */
-.conoce-equipo{
+.conoce-equipo {
     padding: 30px;
-   
+
 }
 
-.datos-equipo{
+.datos-equipo {
     padding: 20px 10px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
     column-gap: 2rem;
     text-align: center;
 }
 
 /* -- Formar parte -- */
-.formar-parte{
-background-color: #FDEFD6;
-height: 450px;
-padding: 40px;
+.formar-parte {
+    background-color: #FDEFD6;
+    height: 450px;
+    padding: 40px;
 }
 
 /* ============= PORTFOLIO ============= */
 /* -- Portfolio -- */
 
-.portfolio{
+.portfolio {
     padding: 20px 40px;
     display: flex;
     flex-direction: column;
@@ -665,7 +654,7 @@ padding: 40px;
 }
 
 /* -- Trabajos Portfolio -- */
-.trabajos-portfolio{
+.trabajos-portfolio {
     background-color: #FDEFD6;
     padding: 40px;
     display: flex;
@@ -674,14 +663,14 @@ padding: 40px;
 }
 
 
-.ig-portfolio{
+.ig-portfolio {
     background-color: #85D09E;
 }
 
 /* ============= CONTACTO ============= */
 /* -- Trabajemos juntos -- */
 
-.trabajemos-juntos{
+.trabajemos-juntos {
     padding: 20px 40px;
     display: flex;
     flex-direction: column;
@@ -689,7 +678,8 @@ padding: 40px;
     text-align: left;
     gap: 1rem;
 }
-.trabajemos-juntos span{
+
+.trabajemos-juntos span {
     font-size: 0.65rem;
     font-style: italic;
 }
@@ -705,13 +695,13 @@ padding: 40px;
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.6;
- }
+}
 
- /* -- Formulario Contacto -- */
- .formulario-contacto{
+/* -- Formulario Contacto -- */
+.formulario-contacto {
     background-color: #FDEFD6;
     padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
- }
+}
