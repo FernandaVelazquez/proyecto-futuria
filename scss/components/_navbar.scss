@@ -1,0 +1,16 @@
+/* ====== NAVBAR ======= */
+.navbar {
+    background-color: $color-primario;
+
+}
+
+.nav{
+    &-item {
+        font-size: 0.9rem;
+    }
+    
+    &-link:hover{
+        color: $color-secundario-dark;
+    }
+}
+

@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "raleway";
+    src: url("../fonts/raleway.ttf");
+}
+
+@font-face {
+    font-family: "roboto-light";
+    src: url("../fonts/roboto-light.ttf");
+}
+
+@font-face {
+    font-family: "dancing-script";
+    src: url("../fonts/dancingscript.ttf");
+}
+
+$color-primario: #FDEFD6;
+$color-secundario: #85D09E;
+$color-secundario-dark: #30a958;
+$color-tipografia: black;
+$color-tipografia-secundaria: white;
+$font-size-regular: .9rem;
+$font-size-grande: 1.2rem;
+$font-size-extragrande: 1.8rem;
+$font-size-chica: .85rem;
+$font-size-mini: .75rem;
+
+* {
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "raleway";
+}
+
+a {
+    text-decoration: none;
+    color: $color-tipografia;
+
+    &:hover {
+        color: $color-secundario-dark
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-size: $font-size-grande;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: $font-size-chica;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: $font-size-regular;
+    font-weight: 500;
+}
+
+main {
+    font-size: $font-size-regular
+}
+
+.imagen {
+    width: 100%;
+} 
+
+@mixin flex-box ($direction: column, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+
+}
+
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}

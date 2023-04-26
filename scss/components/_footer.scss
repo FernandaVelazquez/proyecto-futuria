@@ -1,0 +1,46 @@
+/* ====== FOOTER ======= */
+.footer {
+    @include flex-box ();
+    text-align: center;
+    padding: 3em;
+    gap: 1em;
+
+    @include desktop () {
+        display: grid;
+        grid-template-areas:
+            "explorar ubicacion copyright logo"
+            "explorar ubicacion privacy logo";
+        grid-template-columns: repeat(3, 20vw) auto;
+        text-align: left;
+
+        .footer-explorar {
+            grid-area: explorar;
+        }
+
+        .footer-ubicacion {
+            grid-area: ubicacion;
+        }
+
+        .footer-privacy {
+            grid-area: privacy;
+        }
+
+        .footer-logo-futuria {
+            grid-area: logo;
+        }
+    }
+
+    & span {
+        display: block;
+        font-size: $font-size-regular;
+        margin: 0.5em;
+    }
+
+    & h4 {
+        font-weight: 500;
+    }
+
+    &-copyright span {
+        font-size: $font-size-mini;
+    }   
+}
