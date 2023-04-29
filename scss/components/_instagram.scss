@@ -1,0 +1,51 @@
+/* ====== INSTAGRAM ======= */
+
+.seguinos-instagram {
+    background-color: $color-primario;
+    @include flex-box ();
+    padding: 30px 30px;
+    text-align: center;
+
+    h3 {
+        font-family: dancing-script;
+        font-size: 2em;
+
+        @include desktop() {
+            font-size: 2.5em;
+        }
+    }
+
+    a {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+
+        @include desktop() {
+            font-size: 2em;
+        }
+    }
+
+    &-remark {
+        font-weight: 600;
+    }
+}
+
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 5s;
+    animation-timing-function: steps(60, end);
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}

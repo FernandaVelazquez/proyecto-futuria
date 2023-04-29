@@ -18,11 +18,24 @@ $color-secundario: #85D09E;
 $color-secundario-dark: #30a958;
 $color-tipografia: black;
 $color-tipografia-secundaria: white;
-$font-size-regular: .9rem;
+$font-size-mini: .75rem;
+$font-size-chica: .85rem;
+$font-size-regular: 1rem;
 $font-size-grande: 1.2rem;
 $font-size-extragrande: 1.8rem;
-$font-size-chica: .85rem;
-$font-size-mini: .75rem;
+
+@mixin flex-box ($direction: column, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
 
 * {
     margin: 0;
@@ -38,7 +51,8 @@ a {
     color: $color-tipografia;
 
     &:hover {
-        color: $color-secundario-dark
+        color: $color-secundario-dark;
+      
     }
 }
 
@@ -53,11 +67,19 @@ h1 {
 h2 {
     font-size: $font-size-grande;
     font-weight: 600;
+
+    @include desktop() {
+        font-size: $font-size-extragrande;
+    }
 }
 
 h3 {
     font-size: $font-size-chica;
     font-weight: 300;
+
+    @include desktop() {
+        font-size: $font-size-grande;
+    }
 }
 
 h4 {
@@ -71,18 +93,4 @@ main {
 
 .imagen {
     width: 100%;
-} 
-
-@mixin flex-box ($direction: column, $justify: center, $align: center) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-
-}
-
-@mixin desktop {
-    @media (min-width: 1200px) {
-        @content;
-    }
 }

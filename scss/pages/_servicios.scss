@@ -1,0 +1,209 @@
+/* ====== SERVICIOS ======= */
+/* ------ Servicios-Intro ------ */
+.servicios-intro {
+    padding: 1.5rem 1rem;
+    @include flex-box ();
+
+    @include desktop () {
+        display: grid;
+        grid-template-columns: 40vw 60vw;
+    }
+
+    &-text {
+        width: 80vw;
+        max-width: 600px;
+        text-align: center;
+
+        @include desktop () {
+            width: 85%;
+            max-width: 450px;
+            justify-self: flex-end;
+
+        }
+
+        span {
+            display: inline-block;
+            margin-top: .5rem;
+        }
+    }
+
+    p {
+        margin-top: 1rem;
+    }
+
+    img {
+        @include desktop() {
+            width: 80%;
+            max-width: 600px;
+            justify-self: center;
+        }
+    }
+}
+
+/* ------ Servicios ------ */
+
+.servicios {
+    background-color: $color-primario;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+
+    &-text {
+        @include flex-box ();
+        gap: 1rem;
+
+        @include desktop () {
+            padding: 0rem 5rem;
+            margin-bottom: 2rem;
+
+        }
+    }
+}
+
+.detalle-servicios {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    text-align: left;
+
+    @include desktop () {
+        grid-template-columns: 10% 35% 10% 35%;
+        row-gap: 2rem;
+        padding: 1rem 4rem;
+
+    }
+
+    span {
+        font-family: "roboto-light";
+        font-size: 2.5rem;
+        text-align: right;
+
+        @include desktop () {
+            font-size: 3.5rem;
+            &:hover {
+                transform: scale(1.2);
+                transition: transform .5s;
+                color: $color-secundario-dark;
+        }
+    }
+}}
+
+/* ------ Logros ------ */
+.logros {
+    padding: 2.5rem 2rem;
+    text-align: center;
+
+    &-list {
+        font-weight: 500;
+        font-size: $font-size-chica;
+        padding: .5rem;
+
+        @include desktop () {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 1rem;
+            text-align: center;
+
+            p:hover {
+                transform: scale(1.2);
+                transition: transform .5s;
+        }
+    }}
+
+    @include desktop () {
+        padding: 2.5rem 7.5rem;
+        text-align: left;
+        @include flex-box (column, left, left);
+        gap: 2rem;
+    }
+
+    span {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+}
+
+.bi-diamond-fill {
+    font-size: 0.6rem;
+    color: $color-secundario;
+}
+
+/* ------ Recomendación de usuario ------ */
+.recomendacion-usuario {
+    background-image: url("../images/imagen-2bservicios.png");
+    background-size: cover;
+    height: 450px;
+    text-align: left;
+    @include flex-box (column, space-evenly, left);
+    padding: 2rem;
+
+    @include desktop() {
+        background-image: url("../images/imagen-2servicios.jpg");
+        padding: 2rem 7.5rem;
+    }
+
+    &-text {
+        font-weight: 600;
+        font-style: oblique;
+        line-height: 1.6;
+        width: 60vw;
+
+        @include desktop() {
+            font-size: $font-size-grande;
+            width: 50vw;
+        }
+    }
+}
+
+/* ------ Solicitar entrevista ------ */
+.solicitar-entrevista {
+    background-color: $color-primario;
+    padding: 2rem;
+    @include flex-box();
+    height: 450px;
+
+    @include desktop () {
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-text {
+        @include flex-box ();
+        gap: 2rem;
+        align-self: center;
+
+        @include desktop () {
+            grid-column-start: 2;
+            max-width: 30vw;
+            justify-self: center;
+        }
+    }
+
+    span {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+
+    img {
+        display: none;
+
+        @include desktop () {
+            display: inline;
+            justify-self: center;
+            width: 100%;
+            max-width: 600px;
+            grid-column-start: 1;
+            grid-row-start: 1;
+
+        }
+    }
+}
+
+.button-entrevista {
+    @include desktop () {
+        grid-column-start: 2;
+    }
+}
