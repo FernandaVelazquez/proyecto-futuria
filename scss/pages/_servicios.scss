@@ -80,13 +80,15 @@
 
         @include desktop () {
             font-size: 3.5rem;
+
             &:hover {
                 transform: scale(1.2);
                 transition: transform .5s;
                 color: $color-secundario-dark;
+            }
         }
     }
-}}
+}
 
 /* ------ Logros ------ */
 .logros {
@@ -99,6 +101,7 @@
         padding: .5rem;
 
         @include desktop () {
+
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             row-gap: 1rem;
@@ -107,11 +110,12 @@
             p:hover {
                 transform: scale(1.2);
                 transition: transform .5s;
+            }
         }
-    }}
+    }
 
     @include desktop () {
-        padding: 2.5rem 7.5rem;
+        padding: 4rem 7.5rem;
         text-align: left;
         @include flex-box (column, left, left);
         gap: 2rem;
@@ -163,6 +167,7 @@
     height: 450px;
 
     @include desktop () {
+        padding: 4rem;
         height: 500px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);

@@ -78,7 +78,7 @@
 /* ------ Recomendaciones ------ */
 .recomendacion {
     @include flex-box ();
-    padding: 30px 10px;
+    padding: 4rem 1rem;
 
     h2 {
         width: 70%;

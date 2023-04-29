@@ -1,0 +1,162 @@
+/* ====== QUIENES SOMOS ======= */
+/* ------ Equipo ------ */
+
+.quienes-somos {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-text {
+        padding: 0rem 1.5rem 1rem;
+        text-align: center;
+
+        @include desktop () {
+            width: 80%;
+            align-self: center;
+        }
+    }
+
+    &-intro {
+        @include desktop () {
+            display: grid;
+            grid-template-areas:
+                "imagen titulo"
+                "imagen parrafo";
+            grid-template-columns: 60vw 40vw;
+
+            img {
+                grid-area: imagen;
+                width: 80%;
+                justify-self: center;
+            }
+        }
+    }
+
+    &-descripcion {
+        @include desktop () {
+            display: grid;
+            grid-template-areas:
+                "titulo titulo"
+                "parrafo imagen";
+            grid-template-columns: 50vw 50vw;
+
+            img {
+                width: 80%;
+                justify-self: center;
+            }
+
+            h2 {
+                width: 100%;
+                grid-area: titulo;
+                padding: 2rem 0;
+            }
+
+            p {
+                justify-self: end;
+            }
+        }
+    }
+
+    img {
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* ------ Conocer el equipo ------ */
+.conoce-equipo {
+    padding: 2rem 1.5rem;
+
+    @include desktop () {
+        padding: 4rem 7.5rem;
+
+    }
+
+    img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 200px;
+        margin-bottom: 1rem;
+
+        @include desktop () {
+            width: 12rem;
+            height: 12rem;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+            transition: transform .3s;
+        }
+    }
+
+    &-datos {
+        padding: 2rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+        column-gap: 1.5rem;
+        text-align: center;
+
+        @include desktop () {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 1.5rem;
+            justify-content: center;
+        }
+
+        h4 {
+            margin-top: .5rem;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: transform .3s;
+                color: $color-secundario-dark;
+            }
+        }
+
+        p {
+            font-size: $font-size-mini;
+            @include desktop(){
+                font-size: $font-size-chica; 
+            }
+        }
+    }
+}
+
+/* ------ Formar parte FUTURIA ------ */
+
+.formar-parte {
+    padding: 2.5rem 2rem;
+    background-color: $color-primario;
+
+    h2{
+        padding: 1rem 0;
+    }
+
+    @include desktop() {
+        padding: 2.5rem 12rem;
+        @include flex-box (row);
+        column-gap: 1rem;
+    }
+
+    &-relevante {
+        font-weight: 500;
+        text-align: center;
+    }
+
+    li:hover {
+        transform: scale(1.1);
+        transition: transform .3s;
+        color: $color-secundario-dark;
+    }
+}
+
+.futuria {
+    font-weight: 800;
+    font-size: $font-size-grande;
+    display: inline-block;
+
+    @include desktop() {
+        font-size: $font-size-extragrande;
+    }
+}

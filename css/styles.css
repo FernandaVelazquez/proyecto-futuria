@@ -316,7 +316,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 10px;
+  padding: 4rem 1rem;
 }
 .recomendacion h2 {
   width: 70%;
@@ -492,7 +492,7 @@ main {
 }
 @media (min-width: 1200px) {
   .logros {
-    padding: 2.5rem 7.5rem;
+    padding: 4rem 7.5rem;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -554,6 +554,7 @@ main {
 }
 @media (min-width: 1200px) {
   .solicitar-entrevista {
+    padding: 4rem;
     height: 500px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -597,6 +598,155 @@ main {
 @media (min-width: 1200px) {
   .button-entrevista {
     grid-column-start: 2;
+  }
+}
+
+/* ====== QUIENES SOMOS ======= */
+/* ------ Equipo ------ */
+.quienes-somos {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quienes-somos-text {
+  padding: 0rem 1.5rem 1rem;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .quienes-somos-text {
+    width: 80%;
+    align-self: center;
+  }
+}
+@media (min-width: 1200px) {
+  .quienes-somos-intro {
+    display: grid;
+    grid-template-areas: "imagen titulo" "imagen parrafo";
+    grid-template-columns: 60vw 40vw;
+  }
+  .quienes-somos-intro img {
+    grid-area: imagen;
+    width: 80%;
+    justify-self: center;
+  }
+}
+@media (min-width: 1200px) {
+  .quienes-somos-descripcion {
+    display: grid;
+    grid-template-areas: "titulo titulo" "parrafo imagen";
+    grid-template-columns: 50vw 50vw;
+  }
+  .quienes-somos-descripcion img {
+    width: 80%;
+    justify-self: center;
+  }
+  .quienes-somos-descripcion h2 {
+    width: 100%;
+    grid-area: titulo;
+    padding: 2rem 0;
+  }
+  .quienes-somos-descripcion p {
+    justify-self: end;
+  }
+}
+.quienes-somos img {
+  margin-bottom: 2rem;
+}
+
+/* ------ Conocer el equipo ------ */
+.conoce-equipo {
+  padding: 2rem 1.5rem;
+}
+@media (min-width: 1200px) {
+  .conoce-equipo {
+    padding: 4rem 7.5rem;
+  }
+}
+.conoce-equipo img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 200px;
+  margin-bottom: 1rem;
+}
+@media (min-width: 1200px) {
+  .conoce-equipo img {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+.conoce-equipo img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+.conoce-equipo-datos {
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  column-gap: 1.5rem;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .conoce-equipo-datos {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    justify-content: center;
+  }
+}
+.conoce-equipo-datos h4 {
+  margin-top: 0.5rem;
+}
+.conoce-equipo-datos h4:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  color: #30a958;
+}
+.conoce-equipo-datos p {
+  font-size: 0.75rem;
+}
+@media (min-width: 1200px) {
+  .conoce-equipo-datos p {
+    font-size: 0.85rem;
+  }
+}
+
+/* ------ Formar parte FUTURIA ------ */
+.formar-parte {
+  padding: 2.5rem 2rem;
+  background-color: #FDEFD6;
+}
+.formar-parte h2 {
+  padding: 1rem 0;
+}
+@media (min-width: 1200px) {
+  .formar-parte {
+    padding: 2.5rem 12rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+  }
+}
+.formar-parte-relevante {
+  font-weight: 500;
+  text-align: center;
+}
+.formar-parte li:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  color: #30a958;
+}
+
+.futuria {
+  font-weight: 800;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+@media (min-width: 1200px) {
+  .futuria {
+    font-size: 1.8rem;
   }
 }
 
