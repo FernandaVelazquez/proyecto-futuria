@@ -1,0 +1,168 @@
+/* ====== PORTFOLIO ======= */
+/* ------ Portfolio ------ */
+
+.portfolio {
+    padding: 1.5rem 1rem;
+    @include flex-box();
+    text-align: center;
+    background-image: url("../images/imagen-1portfolio.png");
+    background-size: cover;
+    height: 250px;
+
+    @include desktop () {
+
+        background: none;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        height: 500px;
+    }
+
+    h1 {
+        font-size: $font-size-grande;
+        text-align: end;
+        width: 40vw;
+        align-self: center;
+        margin-left: 8rem;
+
+        @include desktop () {
+            font-size: $font-size-extragrande;
+            margin-left: 2rem;
+            width: 85%;
+            max-width: 450px;
+            text-align: center;
+        }
+    }
+
+    img {
+        display: none;
+
+        @include desktop () {
+            display: inline;
+            width: 100%;
+            max-width: 700px;
+            justify-self: end;
+        }
+    }
+}
+
+
+
+/* -- Trabajos Portfolio -- */
+.trabajos-portfolio {
+    background-color: $color-primario;
+    padding: 2.5rem;
+    @include flex-box(column, center, start);
+    gap: 1rem;
+
+    h4 {
+        margin-top: 1.5rem;
+
+        @include desktop () {
+            font-size: $font-size-grande;
+            text-align: center;
+            align-self: center;
+        }
+    }
+
+    p {
+        @include desktop () {
+            text-align: center;
+        }
+
+    }
+
+    &-a {
+        @include desktop () {
+            display: grid;
+            grid-template-areas:
+                "titulo imagen"
+                "parrafo imagen";
+            grid-template-columns: 40% 60%;
+
+            img {
+                grid-area: imagen;
+                width: 100%;
+                justify-self: center;
+            }
+
+            ul{
+                width: 90%;
+            }
+
+        }
+    }
+
+    &-b {
+        @include desktop () {
+            background-image: url("../images/imagen-2trabajo.jpg");
+            background-size: cover;
+            height: 500px;
+            width: 100%;
+            display: grid;
+            grid-template-areas:
+                "none titulo"
+                "none parrafo";
+            grid-template-columns: 60% 40%;
+
+            img {
+                display: none;
+            }
+
+            h4 {
+                grid-area: titulo;
+            }
+
+            ul {
+                grid-area: parrafo;
+                width: 90%;
+            }
+
+        }
+    }
+
+    &-c {
+        @include desktop () {
+            display: grid;
+            grid-template-areas:
+                "imagen titulo"
+                "imagen parrafo";
+            grid-template-columns: 60% 40%;
+
+            img {
+                grid-area: imagen;
+                width: 80%;
+                justify-self: center;
+            }
+
+        }
+    }
+}
+
+.portfolio-contactanos {
+    background-color: $color-secundario;
+    @include flex-box ();
+    padding: 2rem 2rem;
+    text-align: center;
+    gap: 1rem;
+
+    h3 {
+        font-family: dancing-script;
+        font-size: 2em;
+
+        @include desktop() {
+            font-size: 2.5em;
+        }
+    }
+
+    h4{
+        font-size: 1.5em;
+
+        @include desktop() {
+            font-size: 2em;
+    }}
+
+&-btn{
+    background-color: $color-secundario-dark;
+}
+
+}

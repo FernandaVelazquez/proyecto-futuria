@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 @media (min-width: 1200px) {
@@ -52,7 +52,7 @@ h3 {
 }
 @media (min-width: 1200px) {
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -189,7 +189,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 30px;
+  padding: 2rem;
   text-align: center;
 }
 .seguinos-instagram h3 {
@@ -235,7 +235,7 @@ main {
 /* ====== INDEX/HOME ======= */
 /* ------ Portada ------ */
 .portada {
-  padding: 20px 10px;
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -246,7 +246,7 @@ main {
     background-image: url(../images/image-1.png);
     background-size: cover;
     height: 600px;
-    padding: 0px 40px;
+    padding: 0 2.5rem;
     display: grid;
     grid-template-columns: repeat(2, 40vw);
     justify-items: flex-end;
@@ -291,7 +291,7 @@ main {
 }
 .section-cualidades .futuria {
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   display: inline-block;
 }
 @media (min-width: 1200px) {
@@ -321,6 +321,11 @@ main {
 .recomendacion h2 {
   width: 70%;
   text-align: center;
+}
+@media (min-width: 1200px) {
+  .recomendacion h2 {
+    padding: 1rem 0;
+  }
 }
 .recomendacion-marcas {
   display: grid;
@@ -407,13 +412,10 @@ main {
   display: inline-block;
   margin-top: 0.5rem;
 }
-.servicios-intro p {
-  margin-top: 1rem;
-}
 @media (min-width: 1200px) {
   .servicios-intro img {
     width: 80%;
-    max-width: 600px;
+    max-width: 550px;
     justify-self: center;
   }
 }
@@ -423,6 +425,11 @@ main {
   background-color: #FDEFD6;
   padding: 2.5rem 1.5rem;
   text-align: center;
+}
+@media (min-width: 1200px) {
+  .servicios {
+    padding: 4.5rem 1.5rem;
+  }
 }
 .servicios-text {
   display: flex;
@@ -480,6 +487,7 @@ main {
 }
 @media (min-width: 1200px) {
   .logros-list {
+    font-size: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1rem;
@@ -537,7 +545,7 @@ main {
 }
 @media (min-width: 1200px) {
   .recomendacion-usuario-text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     width: 50vw;
   }
 }
@@ -604,7 +612,7 @@ main {
 /* ====== QUIENES SOMOS ======= */
 /* ------ Equipo ------ */
 .quienes-somos {
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -617,6 +625,9 @@ main {
   .quienes-somos-text {
     width: 80%;
     align-self: center;
+  }
+  .quienes-somos-text span {
+    display: inline-block;
   }
 }
 @media (min-width: 1200px) {
@@ -637,14 +648,20 @@ main {
     grid-template-areas: "titulo titulo" "parrafo imagen";
     grid-template-columns: 50vw 50vw;
   }
+  .quienes-somos-descripcion span {
+    display: inline-block;
+    margin-top: 1rem;
+  }
   .quienes-somos-descripcion img {
     width: 80%;
     justify-self: center;
   }
   .quienes-somos-descripcion h2 {
-    width: 100%;
+    width: 80%;
     grid-area: titulo;
-    padding: 2rem 0;
+    padding: 2rem;
+    justify-self: center;
+    font-size: 1.3rem;
   }
   .quienes-somos-descripcion p {
     justify-self: end;
@@ -741,13 +758,290 @@ main {
 
 .futuria {
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   display: inline-block;
 }
 @media (min-width: 1200px) {
   .futuria {
     font-size: 1.8rem;
   }
+}
+
+/* ====== PORTFOLIO ======= */
+/* ------ Portfolio ------ */
+.portfolio {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../images/imagen-1portfolio.png");
+  background-size: cover;
+  height: 250px;
+}
+@media (min-width: 1200px) {
+  .portfolio {
+    background: none;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 500px;
+  }
+}
+.portfolio h1 {
+  font-size: 1.3rem;
+  text-align: end;
+  width: 40vw;
+  align-self: center;
+  margin-left: 8rem;
+}
+@media (min-width: 1200px) {
+  .portfolio h1 {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    width: 85%;
+    max-width: 450px;
+    text-align: center;
+  }
+}
+.portfolio img {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .portfolio img {
+    display: inline;
+    width: 100%;
+    max-width: 700px;
+    justify-self: end;
+  }
+}
+
+/* -- Trabajos Portfolio -- */
+.trabajos-portfolio {
+  background-color: #FDEFD6;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+.trabajos-portfolio h4 {
+  margin-top: 1.5rem;
+}
+@media (min-width: 1200px) {
+  .trabajos-portfolio h4 {
+    font-size: 1.3rem;
+    text-align: center;
+    align-self: center;
+  }
+}
+@media (min-width: 1200px) {
+  .trabajos-portfolio p {
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .trabajos-portfolio-a {
+    display: grid;
+    grid-template-areas: "titulo imagen" "parrafo imagen";
+    grid-template-columns: 40% 60%;
+  }
+  .trabajos-portfolio-a img {
+    grid-area: imagen;
+    width: 100%;
+    justify-self: center;
+  }
+  .trabajos-portfolio-a ul {
+    width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .trabajos-portfolio-b {
+    background-image: url("../images/imagen-2trabajo.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "none titulo" "none parrafo";
+    grid-template-columns: 60% 40%;
+  }
+  .trabajos-portfolio-b img {
+    display: none;
+  }
+  .trabajos-portfolio-b h4 {
+    grid-area: titulo;
+  }
+  .trabajos-portfolio-b ul {
+    grid-area: parrafo;
+    width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .trabajos-portfolio-c {
+    display: grid;
+    grid-template-areas: "imagen titulo" "imagen parrafo";
+    grid-template-columns: 60% 40%;
+  }
+  .trabajos-portfolio-c img {
+    grid-area: imagen;
+    width: 80%;
+    justify-self: center;
+  }
+}
+
+.portfolio-contactanos {
+  background-color: #85D09E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+  text-align: center;
+  gap: 1rem;
+}
+.portfolio-contactanos h3 {
+  font-family: dancing-script;
+  font-size: 2em;
+}
+@media (min-width: 1200px) {
+  .portfolio-contactanos h3 {
+    font-size: 2.5em;
+  }
+}
+.portfolio-contactanos h4 {
+  font-size: 1.5em;
+}
+@media (min-width: 1200px) {
+  .portfolio-contactanos h4 {
+    font-size: 2em;
+  }
+}
+.portfolio-contactanos-btn {
+  background-color: #30a958;
+}
+
+/* ====== CONTACTO ======= */
+/* ------ Trabajemos Juntos ------ */
+.trabajemos-juntos {
+  padding: 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+@media (min-width: 1200px) {
+  .trabajemos-juntos {
+    padding: 1.5rem 5rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    text-align: left;
+  }
+  .trabajemos-juntos img {
+    grid-column-start: 2;
+  }
+  .trabajemos-juntos-text {
+    width: 90%;
+    justify-self: center;
+  }
+  .trabajemos-juntos-text p {
+    padding: 1rem 0;
+  }
+}
+.trabajemos-juntos span {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.nota-recuerda {
+  background-color: #85D09E;
+  padding: 2.5rem;
+  height: 220px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+@media (min-width: 1200px) {
+  .nota-recuerda {
+    font-size: 1.3rem;
+    height: 160px;
+  }
+}
+
+/* ------ Formulario Contacto ------ */
+.formulario-contacto {
+  background-color: #FDEFD6;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+@media (min-width: 1200px) {
+  .formulario-contacto {
+    padding: 3.5rem 7rem;
+  }
+}
+.formulario-contacto-pregunta, .formulario-contacto-pregunta-c, .formulario-contacto-pregunta-b {
+  font-size: 0.85rem;
+  font-weight: 500;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .formulario-contacto-pregunta, .formulario-contacto-pregunta-c, .formulario-contacto-pregunta-b {
+    font-size: 1rem;
+  }
+}
+.formulario-contacto-pregunta p, .formulario-contacto-pregunta-c p, .formulario-contacto-pregunta-b p {
+  font-size: 0.75rem;
+  font-style: italic;
+  margin-bottom: 0;
+}
+.formulario-contacto-pregunta span, .formulario-contacto-pregunta-c span, .formulario-contacto-pregunta-b span {
+  color: red;
+  font-size: 1.3rem;
+}
+.formulario-contacto-pregunta input, .formulario-contacto-pregunta-c input, .formulario-contacto-pregunta-b input {
+  display: block;
+  width: 100%;
+}
+.formulario-contacto-pregunta textarea, .formulario-contacto-pregunta-c textarea, .formulario-contacto-pregunta-b textarea {
+  display: block;
+  width: 100%;
+}
+.formulario-contacto-pregunta select, .formulario-contacto-pregunta-c select, .formulario-contacto-pregunta-b select {
+  display: block;
+}
+.formulario-contacto-pregunta-b input {
+  display: inline;
+}
+@media (min-width: 1200px) {
+  .formulario-contacto-pregunta-b input {
+    width: auto;
+  }
+}
+.formulario-contacto-pregunta-b div {
+  padding: 0.2rem 0;
+}
+.formulario-contacto-pregunta-c input {
+  display: inline-block;
+  width: auto;
+}
+.formulario-contacto-pregunta-c label {
+  display: inline;
+}
+
+.button-form {
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

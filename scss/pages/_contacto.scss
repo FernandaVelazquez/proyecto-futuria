@@ -1,0 +1,135 @@
+/* ====== CONTACTO ======= */
+/* ------ Trabajemos Juntos ------ */
+
+.trabajemos-juntos {
+    padding: 1.5rem 1.5rem;
+    @include flex-box ();
+    text-align: center;
+    gap: 1rem;
+
+    @include desktop() {
+        padding: 1.5rem 5rem;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        text-align: left;
+
+        img {
+            grid-column-start: 2;
+        }
+
+        &-text {
+            width: 90%;
+            justify-self: center;
+
+            p{
+                padding: 1rem 0;
+            }
+        }
+    }
+
+    span {
+        font-size: $font-size-mini;
+        font-weight: 600;
+    }
+}
+
+.nota-recuerda {
+    background-color: $color-secundario;
+    padding: 2.5rem;
+    height: 220px;
+    text-align: center;
+    font-size: $font-size-regular;
+    font-weight: 600;
+    line-height: 1.6;
+
+    @include desktop() {
+        font-size: $font-size-grande;
+        height: 160px;
+    }
+}
+
+/* ------ Formulario Contacto ------ */
+.formulario-contacto {
+    background-color: $color-primario;
+    padding: 1.5rem;
+    @include flex-box ();
+    gap: 1rem;
+    text-align: left;
+    @include flex-box (column, center, start);
+
+
+    @include desktop() {
+        padding: 3.5rem 7rem;
+    }
+
+
+    &-pregunta {
+        font-size: $font-size-chica;
+        font-weight: 500;
+        width: 100%;
+
+        @include desktop() {
+            font-size: $font-size-regular;
+        }
+
+        p {
+            font-size: $font-size-mini;
+            font-style: italic;
+            margin-bottom: 0;
+        }
+
+        span {
+            color: red;
+            font-size: $font-size-grande
+        }
+
+        input {
+            display: block;
+            width: 100%;
+        }
+
+        textarea {
+            display: block;
+            width: 100%;
+        }
+
+        select {
+            display: block
+        }
+
+        &-b {
+            @extend .formulario-contacto-pregunta;
+
+            input {
+                display: inline;
+
+                @include desktop() {
+                    width: auto;
+                }
+
+            }
+
+            div {
+                padding: .2rem 0;
+            }
+        }
+
+        &-c {
+            @extend .formulario-contacto-pregunta;
+
+            input {
+                display: inline-block;
+                width: auto;
+            }
+
+            label {
+                display: inline;
+            }
+        }
+
+    }
+}
+
+.button-form {
+    margin-top: 1rem;
+}

@@ -2,14 +2,14 @@
 /* ------ Portada ------ */
 
 .portada {
-    padding: 20px 10px;
+    padding: 1.5rem 1rem;
     @include flex-box ();
 
     @include desktop() {
         background-image: url(../images/image-1.png);
         background-size: cover;
         height: 600px;
-        padding: 0px 40px;
+        padding: 0 2.5rem;
         display: grid;
         grid-template-columns: repeat(2, 40vw);
         justify-items: flex-end;
@@ -83,6 +83,9 @@
     h2 {
         width: 70%;
         text-align: center;
+        @include desktop(){
+            padding: 1rem 0;
+        }
     }
 
 

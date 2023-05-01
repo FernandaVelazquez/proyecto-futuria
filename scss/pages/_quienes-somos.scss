@@ -2,7 +2,7 @@
 /* ------ Equipo ------ */
 
 .quienes-somos {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +14,10 @@
         @include desktop () {
             width: 80%;
             align-self: center;
+
+            span {
+                display: inline-block;
+            }
         }
     }
 
@@ -41,15 +45,22 @@
                 "parrafo imagen";
             grid-template-columns: 50vw 50vw;
 
+            span {
+                display: inline-block;
+                margin-top: 1rem;
+            }
+
             img {
                 width: 80%;
                 justify-self: center;
             }
 
             h2 {
-                width: 100%;
+                width: 80%;
                 grid-area: titulo;
-                padding: 2rem 0;
+                padding: 2rem;
+                justify-self: center;
+                font-size: $font-size-grande;
             }
 
             p {
@@ -68,6 +79,7 @@
 .conoce-equipo {
     padding: 2rem 1.5rem;
 
+    
     @include desktop () {
         padding: 4rem 7.5rem;
 
@@ -116,8 +128,9 @@
 
         p {
             font-size: $font-size-mini;
-            @include desktop(){
-                font-size: $font-size-chica; 
+
+            @include desktop() {
+                font-size: $font-size-chica;
             }
         }
     }
@@ -129,7 +142,7 @@
     padding: 2.5rem 2rem;
     background-color: $color-primario;
 
-    h2{
+    h2 {
         padding: 1rem 0;
     }
 

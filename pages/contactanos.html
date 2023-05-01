@@ -9,7 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>FUTURIA Studio - Contactanos</title>
+    <title>Contactanos | FUTURIA Studio</title>
+    <meta name="description" content="Somos una agencia digital con base en Buenos Aires integrada por un equipo de profesionales dedicados y de excelencia, expertos en diferentes áreas digitales, desde el diseño gráfico y el desarrollo web hasta la creación de contenido y el manejo de redes sociales.">
+    <meta name="keywords" content="desarrollo web, diseño grafico, branding profesional, creación de contenido, manejo de redes sociales">
 </head>
 
 <body>
@@ -42,113 +44,122 @@
     </header>
     <main>
         <section class="trabajemos-juntos">
-            <h2>Transforma tu negocio hoy.
-                ¿Trabajamos juntos?</h2>
+            <div class="trabajemos-juntos-text">
+                <h1>Transforma tu negocio hoy.</h1>
+                <h2>¿Trabajamos juntos?</h2>
             <p>Para poder trabajar juntos, es necesario que completes este formulario con suma consciencia y seriedad,
-                ya
-                que se trata del primer contacto que tendremos con tu marca y así saber si podemos ayudarte.
-                Una vez completo el form, te aparecerá en pantalla un link para que puedas reservar tu Entrevista de
+                ya que se trata del primer contacto que tendremos con tu marca y así saber si podemos ayudarte.  Una vez completo el form, te aparecerá en pantalla un link para que puedas reservar tu Entrevista de
                 Diagnóstico, la cual consiste en un encuentro online de 30 minutos para conocernos y determinar si somos
-                un
-                buen match para tu negocio.</p>
-            <span>No enviamos presupuestos sin antes haber tenido la entrevista.</span>
-            <img class="imagen-1servicios" src="../images/imagen1.jpg" alt="imagen-ejemplo">
+                un buen match para tu negocio.</p>
+            <span>No enviamos presupuestos sin antes haber tenido la entrevista.</span></div>
+            <img class="imagen" src="../images/imagen-1contacto.jpg" alt="imagen-1contacto">
 
 
         </section>
         <div class="nota-recuerda">
-            <h4>Recuerda que es sumamente importante que reserves tu entrevista al completar el formulario. En caso
-                de que
-                no te aparezca el link, contáctanos a info@futuriastudio.com</h4>
+            <p>Recuerda que es sumamente importante que reserves tu entrevista al completar el formulario.
+            </p>
+            <p> En caso de que no te aparezca el link, contáctanos a <a href="https://mail.google.com/"
+                    target="_blank">info@futuriastudio.com</a></p>
         </div>
 
         <form class="formulario-contacto" action="">
 
-            <div><label for="nombre">Nombre y Apellido *</label></div>
-            <div><input id="nombre" name="nombre" type="text">
+            <div class="formulario-contacto-pregunta"><label for="nombre">Nombre y Apellido <span>*</span></label>
+                <input id="nombre" name="nombre" type="text">
             </div>
 
-            <div><label for="email">Email *</label></div>
-            <div><input id="email" name="email" type="email">
+            <div class="formulario-contacto-pregunta"><label for="email">Email <span>*</span></label>
+                <input id="email" name="email" type="email">
             </div>
 
-            <div><label for="whatsapp">Whatsapp</label></div>
-            <div><input id="whatsapp" name="whatsapp" type="text">
-                <span>En caso que necesitemos contactarte por este medio.</span>
+            <div class="formulario-contacto-pregunta"><label for="whatsapp">Whatsapp</label>
+                <input id="whatsapp" name="whatsapp" type="text">
+                <p>En caso que necesitemos contactarte por este medio.</p>
+            </div>
 
-                <div> <label for="pais">País donde resides actualmente *</label></div>
-                <div><input id="pais" name="pais" type="text">
-                </div>
-                <div><label for="redes">Redes sociales y/o web de tu negocio *</label></div>
-                <div><input id="redes" name="redes" type="text">
+            <div class="formulario-contacto-pregunta"> <label for="pais">País donde resides actualmente
+                    <span>*</span></label>
+                <input id="pais" name="pais" type="text">
+            </div>
 
-                    <div><span>¿Cuántos años tiene tu negocio en el mercado? *</span></div>
-                    <div><select name="años" id="años">
-                            <option value="0">No ha nacido aún</option>
-                            <option value="1a5">De 1 a 5 años</option>
-                            <option value="mas5">Más de 5 años</option>
-                        </select></div>
-                    <div><label for="referido">¿Sos referido de otro cliente?</label></div>
-                    <div></div><input id="referido" name="referido" type="text">
-                    <span>Escribinos su nombre para que podamos agradecerle!</span>
-                </div>
-                <div> <label for="problematica">Contanos cual es la problemática que atraviesa tu negocio
-                        actualmente
-                        *</label></div>
-                <div><textarea name="problematica" id="problematica" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <label for="objetivo">¿Cuál es el principal objetivo que buscás alcanzar con tu negocio?
-                        *</label>
-                </div>
-                <div><textarea name="objetivo" id="objetivo" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <span>¿Contás con un Branding profesional ya realizado? *</span>
-                </div>
-                <div></div><select name="branding-profesional" id="branding-profesional">
+            <div class="formulario-contacto-pregunta"><label for="redes">Redes sociales y/o web de tu negocio
+                    <span>*</span></label><input id="redes" name="redes" type="text"></div>
+
+            <div class="formulario-contacto-pregunta"><label for="años">¿Cuántos años tiene tu negocio en el mercado?
+                    <span>*</span></label>
+                <select name="años" id="años">
+                    <option value="0">No ha nacido aún</option>
+                    <option value="1a5">De 1 a 5 años</option>
+                    <option value="mas5">Más de 5 años</option>
+                </select>
+            </div>
+
+            <div class="formulario-contacto-pregunta"><label for="referido">¿Sos referido de otro cliente?</label>
+                <input id="referido" name="referido" type="text">
+                <p>Escribinos su nombre para que podamos agradecerle!</p>
+            </div>
+            <div class="formulario-contacto-pregunta"> <label for="problematica">Contanos cual es la problemática que
+                    atraviesa tu negocio actualmente
+                    <span>*</span></label>
+                <textarea name="problematica" id="problematica" cols="30" rows="5"></textarea>
+            </div>
+
+            <div class="formulario-contacto-pregunta"><label for="objetivo">¿Cuál es el principal objetivo que buscás
+                    alcanzar con tu negocio?
+                    <span>*</span></label>
+                <textarea name="objetivo" id="objetivo" cols="30" rows="5"></textarea>
+            </div>
+
+            <div class="formulario-contacto-pregunta"> <label for="branding-profesional">¿Contás con un Branding
+                    profesional ya realizado?
+                    <span>*</span></label>
+                <select name="branding-profesional" id="branding-profesional">
                     <option value="si">Sí</option>
                     <option value="algo">Algo. Lo hice yo casero.</option>
                     <option value="no">No</option>
                 </select>
-                <span>Por ej.: logotipo, paleta de colores, tiografías, manual de marca.</span>
+                <p>Por ej.: logotipo, paleta de colores, tiografías, manual de marca.</p>
             </div>
 
-            <div><span>¿Qué servicio crees que se adecua mejor a tus necesidades? *</span></div>
-            <div><input name="servicio" id="branding" type="radio">
-                <label for="branding">Branding y creación de marca</label>
+            <div class="formulario-contacto-pregunta-b"><label>¿Qué servicio crees que se adecua mejor a tus
+                    necesidades?
+                    <span>*</span></label>
+
+                <div><input name="servicio" id="branding" type="radio">
+                    <label for="branding">Branding y creación de marca</label>
+                </div>
+                <div><input name="servicio" id="web-design" type="radio">
+                    <label for="web-design">Web design / E-commerce</label>
+                </div>
+                <div><input name="servicio" id="mantenimiento-web" type="radio">
+                    <label for="mantenimiento-web">Mantenimiento web</label>
+                </div>
+                <div><input name="servicio" id="fotografia" type="radio">
+                    <label for="fotografia">Fotografía y video</label>
+                </div>
+                <div><input name="servicio" id="socialmedia" type="radio">
+                    <label for="socialmedia">Social Media services</label>
+                </div>
+                <div><input name="servicio" id="no-lo-se" type="radio">
+                    <label for="no-lo-se">No lo sé</label>
+                </div>
+
             </div>
-            <div><input name="servicio" id="web-design" type="radio">
-                <label for="web-design">Web design / E-commerce</label>
-            </div>
-            <div><input name="servicio" id="mantenimiento-web" type="radio">
-                <label for="mantenimiento-web">Mantenimiento web</label>
-            </div>
-            <div><input name="servicio" id="fotografia" type="radio">
-                <label for="fotografia">Fotografía y video</label>
-            </div>
-            <div><input name="servicio" id="socialmedia" type="radio">
-                <label for="socialmedia">Social Media services</label>
-            </div>
-            <div><input name="servicio" id="no-lo-se" type="radio">
-                <label for="no-lo-se">No lo sé</label>
-            </div>
-            <div>
-                <span>¿Cuantó estas dispuesto a invertir? *</span>
-            </div>
-            <div><select name="inversion" id="inversion">
+
+            <div class="formulario-contacto-pregunta"><label>¿Cuantó estas dispuesto a invertir? <span>*</span></label>
+                <select name="inversion" id="inversion">
                     <option value="150">$150,000 ARS</option>
                     <option value="200">$200,000 ARS</option>
                     <option value="250">$250,000 ARS</option>
                     <option value="300">$300,000 ARS</option>
                     <option value="USD">Soy extranjero (aplican valores en USD)</option>
                 </select>
-                <span>Tener en cuenta que el rango de inversión estimado comienza en $120,000 ARS
-                    aproximadamente.
-                </span>
+                <p>Tener en cuenta que el rango de inversión estimado comienza en $120,000 ARS aproximadamente.</p>
             </div>
-            <div><span>¿Cómo conociste a FUTURIA? *</span></div>
-            <div><select name="como-conociste" id="como-conociste">
+
+            <div class="formulario-contacto-pregunta"><label>¿Cómo conociste a FUTURIA? <span>*</span></label>
+                <select name="como-conociste" id="como-conociste">
                     <option value="instagram">Instagram</option>
                     <option value="facebook">Facebook</option>
                     <option value="linkedin">Linkedin</option>
@@ -157,18 +168,21 @@
                     <option value="otro">Otro</option>
                 </select>
             </div>
-            <div> <input name="terminos-condiciones" id="terminos-condiciones" type="checkbox">
-                <label for="terminos-condiciones">He leído y acepto la Política de Privacidad y el uso de mis
-                    datos para
+
+            <div class="formulario-contacto-pregunta-c"> 
+                <input name="terminos-condiciones" id="terminos-condiciones"
+                    type="checkbox">
+                <label for="terminos-condiciones">He leído y acepto la Política de Privacidad y el uso de mis datos para
                     enviarme la información solicitada.</label>
             </div>
-            <div><input class="button" type="submit" value="ENVIAR APLICACIÓN"></div>
+            <div><input class="button button-form" type="submit" value="ENVIAR APLICACIÓN"></div>
         </form>
     </main>
     <footer class="footer">
         <div class="footer-logo-futuria">
             <figure>
-                <img src="../images/logo-futuria.png" alt="logo-futuria">
+                <a href="../index.html"><img class=w-80 src="../images/logo-futuria.png"
+                    alt="logo-futuria"></a>
             </figure>
         </div>
         <div class="footer-explorar">
