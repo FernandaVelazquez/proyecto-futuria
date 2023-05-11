@@ -9,11 +9,17 @@
     background-size: cover;
     height: 250px;
 
-    @include desktop () {
+    @include tablet () {
+        background: none;
+        @include flex-box ();
+        height: 500px;
+        
+    }
 
+    @include desktop () {
         background: none;
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 40% 60%;
         height: 500px;
     }
 
@@ -24,6 +30,13 @@
         align-self: center;
         margin-left: 8rem;
 
+        @include tablet () {
+            font-size: $font-size-extragrande;
+            text-align: center;
+            width: 80vw;
+            margin-left: 0;
+            margin-bottom: 2rem;
+        }
         @include desktop () {
             font-size: $font-size-extragrande;
             margin-left: 2rem;
@@ -36,11 +49,17 @@
     img {
         display: none;
 
+        @include tablet () {
+            display: inline;
+            width: 80%;
+            max-width: 600px;
+            justify-self: center;
+        }
         @include desktop () {
             display: inline;
             width: 100%;
             max-width: 700px;
-            justify-self: end;
+            justify-self: center;
         }
     }
 }

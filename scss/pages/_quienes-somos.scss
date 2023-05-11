@@ -3,13 +3,16 @@
 
 .quienes-somos {
     padding: 1.5rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+
+    @include tablet () {
+        padding: 1.5rem 2.5rem;
+    }
 
     &-text {
         padding: 0rem 1.5rem 1rem;
         text-align: center;
+
 
         @include desktop () {
             width: 80%;
@@ -22,6 +25,8 @@
     }
 
     &-intro {
+        @include flex-box ();
+
         @include desktop () {
             display: grid;
             grid-template-areas:
@@ -38,6 +43,8 @@
     }
 
     &-descripcion {
+        @include flex-box ();
+
         @include desktop () {
             display: grid;
             grid-template-areas:
@@ -71,6 +78,11 @@
 
     img {
         margin-bottom: 2rem;
+
+        @include tablet () {
+            max-width: 600px;
+            align-self: center;
+        }
     }
 }
 
@@ -79,7 +91,10 @@
 .conoce-equipo {
     padding: 2rem 1.5rem;
 
-    
+    @include tablet () {
+        padding: 3rem 5.5rem;
+    }
+
     @include desktop () {
         padding: 4rem 7.5rem;
 
@@ -91,6 +106,10 @@
         border-radius: 200px;
         margin-bottom: 1rem;
 
+        @include tablet () {
+            width: 10rem;
+            height: 10rem;
+        }
         @include desktop () {
             width: 12rem;
             height: 12rem;
@@ -116,7 +135,7 @@
             justify-content: center;
         }
 
-        h4 {
+        h3 {
             margin-top: .5rem;
 
             &:hover {
@@ -144,6 +163,10 @@
 
     h2 {
         padding: 1rem 0;
+    }
+
+    @include tablet () {
+        padding: 2.5rem 10rem;
     }
 
     @include desktop() {

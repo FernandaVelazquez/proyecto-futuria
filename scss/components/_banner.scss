@@ -9,6 +9,10 @@
     font-size: $font-size-chica;
     font-weight: 500;
 
+    @include tablet () {
+        font-size: 1rem;
+        padding: 1rem 8rem;
+    }
     @include desktop () {
         font-size: 1rem;
         padding: 1rem 18rem;

@@ -35,6 +35,14 @@
     background-color: $color-primario;
     @include flex-box ();
 
+    @include tablet () {
+        img {
+            padding: 2rem;
+            width: 80%;
+            max-width: 600px;
+        }
+    }
+
     @include desktop () {
         display: grid;
         grid-template-rows: auto repeat(2, 1fr);
@@ -53,12 +61,12 @@
         }
 
     }
-    
+
     .futuria {
         font-weight: 800;
         font-size: $font-size-grande;
         display: inline-block;
-    
+
         @include desktop() {
             font-size: $font-size-extragrande;
         }
@@ -83,7 +91,8 @@
     h2 {
         width: 70%;
         text-align: center;
-        @include desktop(){
+
+        @include desktop() {
             padding: 1rem 0;
         }
     }
@@ -92,6 +101,13 @@
     &-marcas {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
+        @include tablet () {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 2rem;
+            row-gap: 2rem;
+            margin: 2rem;
+        }
 
         @include desktop () {
             grid-template-columns: repeat(3, 1fr);
@@ -126,7 +142,11 @@
     background-size: cover;
     height: 400px;
     @include flex-box ();
-    padding: 30px 40px;
+    padding: 2rem 2.5rem;
+
+    @include tablet () {
+        padding: 2rem 4rem;
+    }
 
     @include desktop() {
         height: 600px;

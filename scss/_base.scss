@@ -31,8 +31,14 @@ $font-size-extragrande: 1.8rem;
     align-items: $align;
 }
 
+@mixin tablet {
+    @media (min-width: 401px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
 @mixin desktop {
-    @media (min-width: 1200px) {
+    @media (min-width: 1201px) {
         @content;
     }
 }
@@ -52,7 +58,7 @@ a {
 
     &:hover {
         color: $color-secundario-dark;
-      
+
     }
 }
 
@@ -74,6 +80,11 @@ h2 {
 }
 
 h3 {
+    font-size: $font-size-regular;
+    font-weight: 500;
+}
+
+h4 {
     font-size: $font-size-chica;
     font-weight: 300;
 
@@ -82,10 +93,15 @@ h3 {
     }
 }
 
-h4 {
-    font-size: $font-size-regular;
+h5 {
+    font-size: $font-size-chica;
     font-weight: 500;
+
+    @include desktop() {
+        font-size: $font-size-regular;
+    }
 }
+
 
 main {
     font-size: $font-size-regular

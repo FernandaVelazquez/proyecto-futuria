@@ -4,6 +4,10 @@
     padding: 1.5rem 1rem;
     @include flex-box ();
 
+    @include tablet () {
+        padding: 1.5rem 2.5rem;
+    }
+
     @include desktop () {
         display: grid;
         grid-template-columns: 40vw 60vw;
@@ -28,6 +32,12 @@
     }
 
     img {
+        @include tablet () {
+            margin-top: 1.5rem;
+            max-width: 600px;
+            align-self: center;
+        }
+
         @include desktop() {
             width: 80%;
             max-width: 550px;
@@ -42,8 +52,12 @@
     background-color: $color-primario;
     padding: 2.5rem 1.5rem;
     text-align: center;
-    
-    @include desktop(){
+
+    @include tablet () {
+        padding: 3rem;
+    }
+
+    @include desktop() {
         padding: 4.5rem 1.5rem;
     }
 
@@ -78,14 +92,14 @@
         font-size: 2.5rem;
         text-align: right;
 
+        &:hover {
+            transform: scale(1.2);
+            transition: transform .5s;
+            color: $color-secundario-dark;
+        }
+
         @include desktop () {
             font-size: 3.5rem;
-
-            &:hover {
-                transform: scale(1.2);
-                transition: transform .5s;
-                color: $color-secundario-dark;
-            }
         }
     }
 }
@@ -141,6 +155,11 @@
     @include flex-box (column, space-evenly, left);
     padding: 2rem;
 
+    @include tablet() {
+        background-image: url("../images/imagen-2servicios.jpg");
+        padding: 2rem 5rem;
+    }
+
     @include desktop() {
         background-image: url("../images/imagen-2servicios.jpg");
         padding: 2rem 7.5rem;
@@ -165,6 +184,10 @@
     padding: 2rem;
     @include flex-box();
     height: 450px;
+
+    @include tablet() {
+        padding: 2rem 5rem;
+    }
 
     @include desktop () {
         padding: 4rem;
