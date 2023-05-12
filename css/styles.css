@@ -529,22 +529,41 @@ main {
 .logros {
   padding: 2.5rem 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logros p {
+  text-align: center;
 }
 .logros-list {
   font-weight: 500;
   font-size: 0.85rem;
   padding: 0.5rem;
 }
+@media (min-width: 769px) and (max-width: 1199px) {
+  .logros-list {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
 @media (min-width: 1200px) {
   .logros-list {
     font-size: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 4.5rem;
     row-gap: 1rem;
-    text-align: center;
+    text-align: left;
   }
 }
-.logros p:hover {
+@media (min-width: 1200px) {
+  .logros-list p {
+    text-align: left;
+  }
+}
+.logros-list p:hover {
   transform: scale(1.2);
   transition: transform 0.5s;
 }

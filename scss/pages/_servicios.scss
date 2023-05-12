@@ -108,24 +108,41 @@
 .logros {
     padding: 2.5rem 2rem;
     text-align: center;
+    @include flex-box ();
+
+    p {
+        text-align: center;
+    }
+
 
     &-list {
         font-weight: 500;
         font-size: $font-size-chica;
         padding: .5rem;
 
+        @include tablet(){
+            font-size: $font-size-regular;  
+            padding: 1rem;
+        }
         @include desktop () {
             font-size: $font-size-regular;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            column-gap: 4.5rem;
             row-gap: 1rem;
-            text-align: center;
+            text-align: left;
         }
-    }
 
-    p:hover {
-        transform: scale(1.2);
-        transition: transform .5s;
+        p {
+
+            @include desktop{
+            text-align: left;}
+
+            &:hover {
+                transform: scale(1.2);
+                transition: transform .5s;
+            }
+        }
     }
 
     @include desktop () {
