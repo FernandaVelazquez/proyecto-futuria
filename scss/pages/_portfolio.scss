@@ -7,13 +7,13 @@
     text-align: center;
     background-image: url("../images/imagen-1portfolio.png");
     background-size: cover;
-    height: 250px;
+    height: 400px;
 
     @include tablet () {
         background: none;
         @include flex-box ();
-        height: 500px;
-        
+        height: 550px;
+        padding: 1.5rem 2.5rem;
     }
 
     @include desktop () {
@@ -24,25 +24,17 @@
     }
 
     h1 {
-        font-size: $font-size-grande;
-        text-align: end;
-        width: 40vw;
+        width: 80vw;
         align-self: center;
-        margin-left: 8rem;
 
         @include tablet () {
-            font-size: $font-size-extragrande;
-            text-align: center;
-            width: 80vw;
-            margin-left: 0;
-            margin-bottom: 2rem;
+            width: 75vw;
         }
+
         @include desktop () {
-            font-size: $font-size-extragrande;
             margin-left: 2rem;
             width: 85%;
             max-width: 450px;
-            text-align: center;
         }
     }
 
@@ -55,6 +47,7 @@
             max-width: 600px;
             justify-self: center;
         }
+
         @include desktop () {
             display: inline;
             width: 100%;
@@ -104,7 +97,7 @@
                 justify-self: center;
             }
 
-            ul{
+            ul {
                 width: 90%;
             }
 
@@ -149,8 +142,12 @@
 
             img {
                 grid-area: imagen;
-                width: 80%;
+                width: 100%;
                 justify-self: center;
+            }
+
+            ul {
+                justify-self: start;
             }
 
         }
@@ -173,15 +170,16 @@
         }
     }
 
-    h4{
+    h4 {
         font-size: 1.5em;
 
         @include desktop() {
             font-size: 2em;
-    }}
+        }
+    }
 
-&-btn{
-    background-color: $color-secundario-dark;
-}
+    &-btn {
+        background-color: $color-secundario-dark;
+    }
 
 }
